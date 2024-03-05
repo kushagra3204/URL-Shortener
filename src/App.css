@@ -1,0 +1,456 @@
+/* CSS */
+.customurl {
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 600;
+  width: 100px;
+  outline: none;
+  padding: 10px 10px;
+  text-align: center;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  touch-action: manipulation;
+  will-change: transform;
+  margin-right: 5px;
+}
+
+div{
+  user-select: none;
+}
+
+.URLTextBox {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.customurltextbox {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+
+.customurlinput {
+  display: none;
+}
+
+.customurltextbox.active .customurlinput {
+  display: block;
+  margin: 0;
+}
+
+.customurl:disabled {
+  pointer-events: none;
+}
+
+.customurl:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.customurl:active {
+  margin: 0;
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.urlelements {
+  user-select: none;
+  width: 27%;
+}
+
+.Box1 {
+  width: 25%;
+  padding: 2.5% 4%;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-color: #ffffff;
+  text-align: center;
+  /* position: relative; */
+  box-shadow: 10px 10px 5px rgba(40, 40, 40, 0.5);
+}
+
+.shortURLDiv {
+  display: flex;
+  justify-content: left;
+}
+
+.shortURLDiv1 {
+  padding: 8px 4px;
+  display: flex;
+  border: 1px solid #333;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.shortURLDiv2 {
+  padding: 8px 4px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  justify-content: left;
+  display: flex;
+  border-right: 1px solid #333;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  width: 63%;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  margin: 0;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.formLogin {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  border: none;
+  background-color: #fff;
+  margin: 0;
+}
+
+.CenterDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.movLeft {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 20px 30px;
+}
+
+.movRight {
+  display: block;
+  text-align: center;
+  padding: 20px 30px;
+  float: right;
+}
+
+@font-face {
+  font-family: 'AngryBirds';
+  src: url('./assets/angrybirds-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gagalin';
+  src: url('./assets/Gagalin.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Saphira';
+  src: url('./assets/Saphira.otf') format('truetype');
+}
+
+.h2Style {
+  font-family: "AngryBirds";
+}
+
+.aStyle {
+  font-family: "AngryBirds";
+  color: #000;
+  text-decoration: none;
+  padding: 20px 30px;
+  font-size: 20px;
+}
+
+.logincontainer{
+  display: flex;
+  /* position: absolute; */
+  margin-right: 50px;
+  background-color: #fff;
+  display: inline-block;
+  padding: 20px 20px 20px 20px;
+  border-radius: 20px;
+  font-family: 'Saphira';
+  overflow: hidden;
+  box-shadow: 10px 10px 5px rgba(40, 40, 40, 0.5);
+  right: 0;
+}
+
+.LoginPage {
+  height: 100vh;
+  display: flex;
+  background-image: url("./assets/loginpage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+
+.navbar a:hover {
+    color: #333;
+}
+
+body, html, p {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI" ;
+  line-height: 0.9em;
+  font-weight: 600; /* Add your preferred font */
+}
+
+.SignupGridOR {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 4fr 1fr 4fr;
+  gap: 0;
+}
+
+.gridItemOR {
+  color: #000;
+  /* height: 1px; */
+  /* background-color: #000; */
+  border: 1.3px solid #000;
+  text-align: center;
+}
+.gridItemOR:nth-child(2) {
+  border: none;
+  font-weight: 400;
+}
+
+.add-bg-col {
+  background-image: url("./assets/shorturlbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: auto;
+  background-color: #f5f4f2;
+}
+
+.divRow {
+  display: flex;
+  flex-direction: column;
+  /* margin: 5px; */
+}
+
+.inputLogin {
+  color: #333333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  width: 100%;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.ThirdParty {
+  display: absolute;
+  margin-left: 180px;
+}
+
+.SignupLogo {
+  height: 20px;
+  margin-right: 15px;
+}
+
+.SignupThirdParty {
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  border: 2px dashed #333;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.signupP {
+  font-size: 20px;
+  font-weight: 450;
+}
+
+.btnLogin:hover {
+  font-family: 'Saphira';
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  padding: 8px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btnLogin {
+  font-family: 'Saphira';
+  background-color: #0a2540;
+  color: white;
+  font-size: 16px;
+  padding: 8px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.labelLogin{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+
+.add-bg-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+input[type="text"] {
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+input[type="submit"] {
+  background-color: #000;
+  width: 50%;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+input[type="submit"]:hover {
+  background-color: #374151;
+}
+
+.button50 {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button50:focus {
+  text-decoration: none;
+}
+
+.button50:hover {
+  text-decoration: none;
+}
+
+.button50:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button50:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+
+
+p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+/*Analytics.jsx*/
+
+.AnalyticsDivMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0; /* Remove padding */
+  /* width: 100vw; */
+}
+
+.headAnalytics {
+  font-family: 'Gagalin';
+  height: 60px;
+  font-size: 60px;
+  margin: 50px;
+}
+
+.Analyticsrow1Column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row1Analytics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
